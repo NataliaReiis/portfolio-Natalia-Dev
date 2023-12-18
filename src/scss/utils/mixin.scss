@@ -1,0 +1,14 @@
+@mixin text-style($size, $weight, $color, $width){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    $width: $width
+}
+
+@mixin button-style($width, $line, $size, $color, $bgColor,){
+    width: $width;
+    line-height: $line;
+    font-size: $size;
+    color: $color;
+    background: $background;
+}
