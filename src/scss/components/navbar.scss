@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  width: 100vw;
+
+  ul {
+    display: flex;
+    justify-content: end;
+    padding-left: 20rem;
+    li {
+      text-align: center;
+      padding: 0 1.8rem;
+      text-decoration: none;
+      list-style: none;
+    @include text-style(1rem, 200, var(--text-color), auto)
+    }
+  }
+  .button-blog{
+    @include button-style(14%, 2.5rem, 1rem, var(--text-color), var(--secondary-color));
+    border: none;
+    border-radius: var(--border-radius);
+  } 
+  
+}

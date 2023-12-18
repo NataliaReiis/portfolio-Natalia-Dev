@@ -1,0 +1,53 @@
+.app{
+    height: 100vh;
+    background-color: var(--background);
+    overflow-X: hidden;
+}
+    .home-container{
+        display: flex;
+        height: auto;
+        align-items: center;
+       .infos-home-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 2rem;
+            
+            h1{
+                @include text-style(2.95rem, 500, var(--text-color), auto);
+                
+            }
+            .data-home{
+                display: flex;
+
+                p{
+                    @include text-style(0.75rem, 200, var(--primary-color), auto);
+                    margin-right: 1rem;
+                    border: 1px solid var(--primary-color);
+                    border-radius: var(--border-radius);
+                    padding: 0.45rem;
+                    
+                }
+            }
+            .icons-home{
+                svg{
+                    margin-right: 1rem;
+                    font-size: 2em;
+                    background-color: var(--gray);
+                    border-radius: var(--border-radius);
+                    padding: 0.3rem;
+                    color: var(--primary-color)
+                }
+            }
+        }
+        button{
+            @include button-style(12rem, 2.5rem, 1rem, var(--text-color), var(--secondary-color));
+            border: none;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+        }
+        .image-home-container{
+            padding: 1.5rem;
+            
+        }
+    }

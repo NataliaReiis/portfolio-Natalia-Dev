@@ -2,7 +2,7 @@
     font-size: $size;
     font-weight: $weight;
     color: $color;
-    $width: $width
+    width: $width;
 }
 
 @mixin button-style($width, $line, $size, $color, $bgColor,){
@@ -10,5 +10,6 @@
     line-height: $line;
     font-size: $size;
     color: $color;
-    background: $background;
+    background: $bgColor;
+    outline: none;
 }
