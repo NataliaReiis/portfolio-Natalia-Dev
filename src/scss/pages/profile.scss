@@ -1,0 +1,72 @@
+.profile {
+  background-color: var(--background);
+
+  .timeline-title{
+    color: var(--text-color);
+    text-align: center;
+    margin: 2rem;
+  }
+  .about-infos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin: 8rem 0;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    .about-text {
+      width: 40vw;
+      height: auto;
+     
+ 
+      h1 {
+        @include text-style(2.75rem, 700, var(--secondary-color), auto);
+        padding: 1rem 0;
+      }
+      p {
+        @include text-style(1rem, 200, var(--text-color), auto);
+      }
+    }
+    .image-about {
+      padding-left: 2rem;
+      display: flex;
+      align-items: center;
+      img {
+        zoom: 0.7;
+      }
+    }
+  }
+  .code-design-container {
+    .code-content,
+    .design-content {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      .design-code-text {
+        width: 50%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1 {
+          @include text-style(2.75rem, 200, var(--text-color), auto);
+          padding: 1rem;
+          align-items: center;
+          svg {
+            font-size: 1.5rem;
+            text-align: center;
+          }
+        }
+        p {
+          @include text-style(1rem, 200, var(--text-color), auto);
+        }
+      }
+      img {
+        width: 40%;
+      }
+    }
+  }
+}

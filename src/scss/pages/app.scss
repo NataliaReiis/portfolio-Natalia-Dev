@@ -2,16 +2,18 @@
     height: 100vh;
     background-color: var(--background);
     overflow-X: hidden;
-}
+
     .home-container{
         display: flex;
         height: auto;
         align-items: center;
+
        .infos-home-container{
             display: flex;
             justify-content: center;
             flex-direction: column;
             padding-left: 2rem;
+            width: 50%;
             
             h1{
                 @include text-style(2.95rem, 500, var(--text-color), auto);
@@ -46,8 +48,6 @@
             border-radius: var(--border-radius);
             margin: 2rem 0;
         }
-        .image-home-container{
-            padding: 1.5rem;
-            
-        }
+       
     }
+}
