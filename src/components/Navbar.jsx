@@ -5,8 +5,10 @@ import Logo from "../assets/icon/WLogo.svg";
 export default function Navbar() {
   return (
     <>
-      <header>
+      <header to="/">
+        <Link>
         <img src={Logo} alt="Logo natalia reis" />
+        </Link>    
           <ul>
             <Link to="/">
               <li>Home</li>

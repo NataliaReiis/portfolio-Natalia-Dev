@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
-import Skills from '../components/Skills';
-import TimeLine from '../components/Line'
+import Skills from "../components/Skills";
+import TimeLine from "../components/Line";
 
 import { FiCode } from "react-icons/fi";
 import { BsBrush } from "react-icons/bs";
@@ -13,30 +13,33 @@ export default function Profile() {
   return (
     <div className="profile">
       <Navbar />
-      <div className="about-infos-container">
+     <div className="about-infos-container">
         <div className="about-text">
-          <h1>Um pouco sobre mim...</h1>
+          <h1>Olá, me chamo Natália...</h1>
           <p>
-            Me chamo Natália, sou estudante de Ciência da Computação no 5º semestre. Estou super
-            empolgada com a jornada de transformar conceitos em experiências
-            digitais. Meu caminho começou no design e front-end, mas agora estou
-            mergulhando também na estrutura de dados e lógica de programação.
-            Tenho um olhar atento para construir sistemas eficientes, combinando
-            meu entendimento de estrutura de dados e lógica de programação com a
-            habilidade de criar interfaces intuitivas. Meu site é mais do que
-            linhas de código; é uma mistura equilibrada entre funcionalidade e
-            design.
+            Me chamo Natália, sou estudante de Ciência da Computação no 5º
+            semestre. Estou super empolgada com a jornada de transformar
+            conceitos em experiências digitais. Meu caminho começou no design e
+            front-end, mas agora estou mergulhando também na estrutura de dados
+            e lógica de programação. Tenho um olhar atento para construir
+            sistemas eficientes, combinando meu entendimento de estrutura de
+            dados e lógica de programação com a habilidade de criar interfaces
+            intuitivas. Meu site é mais do que linhas de código; é uma mistura
+            equilibrada entre funcionalidade e design.
           </p>
         </div>
         <div className="image-about">
           <img src={ImageAbout} alt="" />
         </div>
       </div>
+      <Skills />
+     
+    
       <div className="code-design-container">
-        <div className="code-content">
-          <img src={code} alt="" />
-          <span className="design-code-text">
-            <h1>
+        <div className="code-design-content">
+          <div className="code-content">
+            <img src={code} alt="" />
+              <h1>
               Developer
               <FiCode />
             </h1>
@@ -47,11 +50,10 @@ export default function Profile() {
               experiência interativa e responsiva que eleva a usabilidade e a
               acessibilidade. Navegue pelos projetos e descubra como transformo
               conceitos em interfaces dinâmicas e intuitivas.
-            </p>
-          </span>
-        </div>
+            </p>       
+          </div>
+       
         <div className="design-content">
-          <span className="design-code-text">
             <h1>
               Design
               <BsBrush />
@@ -65,15 +67,13 @@ export default function Profile() {
               escolhida. Explore meu portfólio e descubra como transformo ideias
               em designs que cativam e inspiram
             </p>
-          </span>
 
           <img src={design} alt="" />
         </div>
-      </div> 
+      </div>
+      </div>
       <h1 className="timeline-title">Jornada Acadêmica</h1>
       <TimeLine />
-      <Skills />
-     
     </div>
   );
 }

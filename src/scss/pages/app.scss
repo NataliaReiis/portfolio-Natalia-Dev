@@ -43,7 +43,7 @@
             }
         }
         button{
-            @include button-style(12rem, 2.5rem, 1rem, var(--text-color), var(--secondary-color));
+            @include button-style(12rem, 2.5rem, 1rem, var(--text-color-clear), var(--secondary-color));
             border: none;
             border-radius: var(--border-radius);
             margin: 2rem 0;

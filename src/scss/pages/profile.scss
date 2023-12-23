@@ -1,10 +1,9 @@
 .profile {
   background-color: var(--background);
-
   .timeline-title{
-    color: var(--text-color);
+    @include text-style(3.75rem, 500, var(--text-color), auto );
     text-align: center;
-    margin: 2rem;
+    margin: 10rem 0 6rem 0;
   }
   .about-infos-container {
     display: flex;
@@ -13,60 +12,63 @@
     align-self: center;
     width: 100%;
     height: auto;
-    margin: 8rem 0;
-    background-color: var(--primary-color);
+    margin: 8rem 0 6rem 0;
     border-radius: var(--border-radius);
     .about-text {
-      width: 40vw;
+      width: 50vw;
       height: auto;
-     
- 
+      
       h1 {
-        @include text-style(2.75rem, 700, var(--secondary-color), auto);
+        @include text-style(2.75rem, 700, var(--text-color), auto);
         padding: 1rem 0;
       }
       p {
-        @include text-style(1rem, 200, var(--text-color), auto);
+        @include text-style(1.2rem, 200, var(--text-color), auto);
+        width: 80%;
       }
     }
     .image-about {
       padding-left: 2rem;
       display: flex;
       align-items: center;
+     
       img {
-        zoom: 0.7;
+        zoom: 0.8;
       }
     }
   }
-  .code-design-container {
-    .code-content,
-    .design-content {
+   .code-design-container{
+    margin: 10rem 0;
+    .code-design-content{
       display: flex;
       justify-content: center;
-      padding: 2rem;
-      .design-code-text {
-        width: 50%;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        h1 {
-          @include text-style(2.75rem, 200, var(--text-color), auto);
-          padding: 1rem;
-          align-items: center;
-          svg {
-            font-size: 1.5rem;
-            text-align: center;
+      align-items: center;
+      text-align: center;
+      width: 80vw;
+      margin: 0 auto;
+       .code-content,
+       .design-content { 
+        h1{
+          margin: 1rem 0;
+          @include text-style(2.7rem, 500, var(--secondary-color), auto);
+          letter-spacing: 0.8rem;
+          svg{
+            font-size: 1.8rem;
+            margin-left: 0.3rem;
+            
           }
         }
-        p {
-          @include text-style(1rem, 200, var(--text-color), auto);
+        p{
+          @include text-style(1.2rem, 200, var(--secondary-color), auto);  
         }
-      }
-      img {
-        width: 40%;
-      }
+       }
     }
+   
+
+     img{
+      width: 70%;
+     
+     }
+   
   }
 }
