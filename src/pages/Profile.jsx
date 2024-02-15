@@ -1,6 +1,5 @@
-import Navbar from "../components/Navbar";
-import Skills from "../components/Skills";
-import TimeLine from "../components/Line";
+import Skills from "../components/profile/Skills";
+import TimeLine from "../components/profile/Line";
 
 import { FiCode } from "react-icons/fi";
 import { BsBrush } from "react-icons/bs";
@@ -12,8 +11,7 @@ import design from "../assets/icon/design.svg";
 export default function Profile() {
   return (
     <div className="profile">
-      <Navbar />
-     <div className="about-infos-container">
+      <div className="about-infos-container">
         <div className="about-text">
           <h1>Olá, me chamo Natália...</h1>
           <p>
@@ -34,13 +32,12 @@ export default function Profile() {
         </div>
       </div>
       <Skills />
-     
-    
+
       <div className="code-design-container">
         <div className="code-design-content">
           <div className="code-content">
             <img src={code} alt="" />
-              <h1>
+            <h1>
               Developer
               <FiCode />
             </h1>
@@ -51,10 +48,10 @@ export default function Profile() {
               experiência interativa e responsiva que eleva a usabilidade e a
               acessibilidade. Navegue pelos projetos e descubra como transformo
               conceitos em interfaces dinâmicas e intuitivas.
-            </p>       
+            </p>
           </div>
-       
-        <div className="design-content">
+
+          <div className="design-content">
             <h1>
               Design
               <BsBrush />
@@ -69,9 +66,9 @@ export default function Profile() {
               em designs que cativam e inspiram
             </p>
 
-          <img src={design} alt="" />
+            <img src={design} alt="" />
+          </div>
         </div>
-      </div>
       </div>
       <h1 className="timeline-title">Jornada Acadêmica</h1>
       <TimeLine />
