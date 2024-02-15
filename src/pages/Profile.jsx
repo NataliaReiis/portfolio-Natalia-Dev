@@ -4,7 +4,7 @@ import TimeLine from "../components/profile/Line";
 import { FiCode } from "react-icons/fi";
 import { BsBrush } from "react-icons/bs";
 
-import ImageAbout from "../assets/image/about-image.png";
+import ImageAbout from "../assets/image/about-image.png" ;
 import code from "../assets/icon/code.svg";
 import design from "../assets/icon/design.svg";
 
