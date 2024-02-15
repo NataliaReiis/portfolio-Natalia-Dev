@@ -27,6 +27,7 @@ export default function Profile() {
             intuitivas. Meu site é mais do que linhas de código; é uma mistura
             equilibrada entre funcionalidade e design.
           </p>
+          <button>Entrar em contato</button>
         </div>
         <div className="image-about">
           <img src={ImageAbout} alt="" />
