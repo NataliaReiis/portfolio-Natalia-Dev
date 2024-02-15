@@ -1,53 +1,49 @@
-.app{
-    height: 100vh;
-    background-color: var(--background);
-    overflow-X: hidden;
+.app {
+  height: auto;
+  background-color: var(--background);
+  overflow-x: hidden;
 
-    .home-container{
-        display: flex;
-        height: auto;
-        align-items: center;
+  .home-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding: 2rem;
 
-       .infos-home-container{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            padding-left: 2rem;
-            width: 50%;
-            
-            h1{
-                @include text-style(2.95rem, 500, var(--text-color), auto);
-                
-            }
-            .data-home{
-                display: flex;
-
-                p{
-                    @include text-style(0.75rem, 200, var(--primary-color), auto);
-                    margin-right: 1rem;
-                    border: 1px solid var(--primary-color);
-                    border-radius: var(--border-radius);
-                    padding: 0.45rem;
-                    
-                }
-            }
-            .icons-home{
-                svg{
-                    margin-right: 1rem;
-                    font-size: 2em;
-                    background-color: var(--gray);
-                    border-radius: var(--border-radius);
-                    padding: 0.3rem;
-                    color: var(--primary-color)
-                }
-            }
-        }
-        button{
-            @include button-style(12rem, 2.5rem, 1rem, var(--text-color-clear), var(--secondary-color));
-            border: none;
-            border-radius: var(--border-radius);
-            margin: 2rem 0;
-        }
-       
+    .infos-home-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 2rem;
+      width: 50%;
+    
+      .pointes{
+        color: var(--primary-color);
+        font-size: 8rem
     }
+      h1 {
+        @include text-style(3.4rem, 500, var(--text-color), auto);
+      }
+      h2 {
+        @include text-style(2rem, 300, var(--text-color), auto);
+      }
+      .icons-home {
+        margin-top: 2rem;
+        svg {
+          width: auto;
+          height: auto;
+          margin-right: 1rem;
+          font-size: 1.5em;
+          background-color: var(--reserve-color1);
+          border-radius: var(--border-radius);
+          padding: 0.6rem;
+          color: var(--primary-color);
+        }
+      }
+    }
+    .image-home-container {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

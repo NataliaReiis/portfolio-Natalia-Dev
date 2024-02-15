@@ -1,16 +1,14 @@
 header {
+  background-color: var(--background);
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   text-align: center;
   align-items: center;
   height: auto;
-  padding: 2rem;
-  margin-bottom: 2.5rem;
+  padding: 4rem;
+
   width: 100vw;
 
-  img{
-    filter: brightness(0);
-  }
 
   ul {
     display: flex;
@@ -21,7 +19,7 @@ header {
       padding: 0 1.8rem;
       text-decoration: none;
       list-style: none;
-    @include text-style(1.2rem, 200, var(--text-color),100%);
+    @include text-style(1.2rem, 500, var(--text-color),100%);
     &:hover{
       border-bottom: 1px solid var(--primary-color);
       color: var(--primary-color);
@@ -31,7 +29,7 @@ header {
     }
   }
   .button-blog{
-    @include button-style(10rem, 2.5rem, 1rem, var(--text-color-clear), var(--secondary-color));
+    @include button-style(10rem, 2.5rem, 1rem, var(--text-light), var(--secondary-color));
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;

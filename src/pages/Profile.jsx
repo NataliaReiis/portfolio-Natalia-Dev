@@ -4,7 +4,7 @@ import TimeLine from "../components/profile/Line";
 import { FiCode } from "react-icons/fi";
 import { BsBrush } from "react-icons/bs";
 
-import ImageAbout from "../assets/image/about-image.png" ;
+import ImageAbout from "../assets/image/about-me.png";
 import code from "../assets/icon/code.svg";
 import design from "../assets/icon/design.svg";
 
@@ -13,7 +13,7 @@ export default function Profile() {
     <div className="profile">
       <div className="about-infos-container">
         <div className="about-text">
-          <h1>Olá, me chamo Natália...</h1>
+          <h1>Um pouco sobre mim...</h1>
           <p>
             Me chamo Natália, sou estudante de Ciência da Computação no 5º
             semestre. Estou super empolgada com a jornada de transformar

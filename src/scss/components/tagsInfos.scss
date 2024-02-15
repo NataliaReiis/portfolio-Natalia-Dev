@@ -1,0 +1,57 @@
+.tagsInfos {
+  .tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--reserve-color1);
+      border: 1px solid var(--primary-color);
+      margin: 1rem;
+      font-size: 1.2rem;
+      color: var(--text-light);
+      width: auto;
+      height: auto;
+      padding: 0.6rem 1rem;
+      border-radius: var(--border-radius);
+    }
+  }
+  .infos {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #263238a7;
+    border-radius: var(--border-radius);
+    background-color: white;
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 1.4rem;
+
+      img {
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        margin: 0 auto;
+      }
+      h1 {
+        @include text-style(1.8rem, 600, var(--text-color), 100%);
+        padding: 0.9rem
+      }
+      p {
+        @include text-style(1rem, 400, var(--text-color), auto);
+        text-align: justify;
+        margin: 0 2rem;
+      }
+    }
+  }
+}

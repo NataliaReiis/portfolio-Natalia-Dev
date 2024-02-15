@@ -1,23 +1,20 @@
 .profile {
   background-color: var(--background);
-  .timeline-title{
-    @include text-style(3.75rem, 500, var(--text-color), auto );
-    text-align: center;
-    margin: 10rem 0 6rem 0;
-  }
+  
   .about-infos-container {
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 100%;
+    width: auto;
     height: auto;
-    margin: 8rem 0 6rem 0;
+  
+    background-color: white;
     border-radius: var(--border-radius);
     .about-text {
       width: 50vw;
       height: auto;
-      
+
       h1 {
         @include text-style(2.75rem, 700, var(--text-color), auto);
         padding: 1rem 0;
@@ -27,59 +24,72 @@
         width: 80%;
       }
       button {
-          @include button-style(14rem, 2.5rem, 1rem, var(--secondary-color), transparente);
-          border-radius: var(--border-radius);
-          border: 1px solid var(--secondary-color);
-          cursor: pointer;
-          margin: 2rem 0;
-          &:hover{
-            @include button-style(14rem, 2.5rem, 1rem, var(--text-color-clear),  var(--secondary-color));
-          }
-
+        @include button-style(
+          14rem,
+          2.5rem,
+          1rem,
+          var(--secondary-color),
+          transparente
+        );
+        border-radius: var(--border-radius);
+        border: 1px solid var(--secondary-color);
+        cursor: pointer;
+        margin: 2rem 0;
+        &:hover {
+          @include button-style(
+            14rem,
+            2.5rem,
+            1rem,
+            var(--text-color-clear),
+            var(--secondary-color)
+          );
+        }
       }
     }
     .image-about {
       padding-left: 2rem;
       display: flex;
       align-items: center;
-     
+
       img {
         zoom: 0.8;
       }
     }
   }
-   .code-design-container{
+  .code-design-container {
     margin: 10rem 0;
-    .code-design-content{
+    .code-design-content {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       width: 80vw;
       margin: 0 auto;
-       .code-content,
-       .design-content { 
-        h1{
+      .code-content,
+      .design-content {
+        h1 {
           margin: 1rem 0;
           @include text-style(2.7rem, 500, var(--secondary-color), auto);
           letter-spacing: 0.8rem;
-          svg{
+          svg {
             font-size: 1.8rem;
             margin-left: 0.3rem;
-            
           }
         }
-        p{
-          @include text-style(1.2rem, 200, var(--secondary-color), auto);  
+        p {
+          @include text-style(1.2rem, 200, var(--secondary-color), auto);
         }
-       }
+      }
     }
-   
 
-     img{
+    img {
       width: 70%;
-     
-     }
-   
+    }
+  
+  }
+  .timeline-title {
+    @include text-style(3.75rem, 500, var(--text-color), auto);
+    text-align: center;
+    margin: 10rem 0 6rem 0;
   }
 }
