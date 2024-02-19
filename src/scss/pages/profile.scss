@@ -1,35 +1,36 @@
 .profile {
   background-color: var(--background);
-  
+
   .about-infos-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-self: center;
     width: auto;
     height: auto;
-  
-    background-color: white;
-    border-radius: var(--border-radius);
+    margin: 7rem 1rem;
+    background: linear-gradient(to top, var(--primary-color),var(--secondary-color));
+
     .about-text {
-      width: 50vw;
+      width: 50%;
       height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 3rem;
 
       h1 {
-        @include text-style(2.75rem, 700, var(--text-color), auto);
+        @include text-style(2.75rem, 500, var(--text-light), auto);
         padding: 1rem 0;
       }
       p {
-        @include text-style(1.2rem, 200, var(--text-color), auto);
-        width: 80%;
+        @include text-style(1rem, 200, var(--text-light), auto);
       }
       button {
         @include button-style(
           14rem,
           2.5rem,
           1rem,
-          var(--secondary-color),
-          transparente
+          var(--text-light),
+          var(--secondary-color)
         );
         border-radius: var(--border-radius);
         border: 1px solid var(--secondary-color);
@@ -40,19 +41,21 @@
             14rem,
             2.5rem,
             1rem,
-            var(--text-color-clear),
-            var(--secondary-color)
+            var(--text-light),
+            var(--reserve-color1)
           );
         }
       }
     }
     .image-about {
-      padding-left: 2rem;
       display: flex;
       align-items: center;
+      padding: 0 2rem;
+      width: 50%;
 
       img {
-        zoom: 0.8;
+        zoom: 1;
+        position: absolute;
       }
     }
   }
@@ -63,14 +66,14 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      width: 80vw;
+      width: 80%;
       margin: 0 auto;
       .code-content,
       .design-content {
         h1 {
           margin: 1rem 0;
           @include text-style(2.7rem, 500, var(--secondary-color), auto);
-          letter-spacing: 0.8rem;
+          letter-spacing: 0.5rem;
           svg {
             font-size: 1.8rem;
             margin-left: 0.3rem;
@@ -78,6 +81,7 @@
         }
         p {
           @include text-style(1.2rem, 200, var(--secondary-color), auto);
+          text-align: justify;
         }
       }
     }
@@ -85,11 +89,10 @@
     img {
       width: 70%;
     }
-  
   }
-  .timeline-title {
+  .profile-titles {
     @include text-style(3.75rem, 500, var(--text-color), auto);
     text-align: center;
-    margin: 10rem 0 6rem 0;
+    margin: 5rem 0;
   }
 }

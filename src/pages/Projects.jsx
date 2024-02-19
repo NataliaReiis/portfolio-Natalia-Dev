@@ -1,8 +1,9 @@
+import ListProjects from '../components/project/ListProjects';
 
-export default function Projects(){
+export default function Prokects(){
     return(
-        <div className="container-global">
-
-        </div>
+        <>
+        <ListProjects />
+        </>
     )
 }

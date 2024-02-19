@@ -11,6 +11,10 @@ import design from "../assets/icon/design.svg";
 export default function Profile() {
   return (
     <div className="profile">
+      <h1 className="profile-titles">Jornada Acadêmica</h1>
+      <TimeLine />
+      <h1 className="profile-titles">Skills</h1>
+      <Skills />
       <div className="about-infos-container">
         <div className="about-text">
           <h1>Um pouco sobre mim...</h1>
@@ -31,30 +35,14 @@ export default function Profile() {
           <img src={ImageAbout} alt="" />
         </div>
       </div>
-      <Skills />
 
       <div className="code-design-container">
         <div className="code-design-content">
           <div className="code-content">
             <img src={code} alt="" />
             <h1>
-              Developer
-              <FiCode />
-            </h1>
-            <p>
-              Um lugar onde a estética encontra a funcionalidade. Como
-              desenvolvedor front-end, minha paixão é dar vida às visões dos
-              designers. Cada linha de código é uma oportunidade de criar uma
-              experiência interativa e responsiva que eleva a usabilidade e a
-              acessibilidade. Navegue pelos projetos e descubra como transformo
-              conceitos em interfaces dinâmicas e intuitivas.
-            </p>
-          </div>
-
-          <div className="design-content">
-            <h1>
               Design
-              <BsBrush />
+              <FiCode />
             </h1>
             <p>
               Meu portfólio é uma jornada visual através do mundo do design,
@@ -65,13 +53,26 @@ export default function Profile() {
               escolhida. Explore meu portfólio e descubra como transformo ideias
               em designs que cativam e inspiram
             </p>
+          </div>
+
+          <div className="design-content">
+            <h1>
+              Developer
+              <BsBrush />
+            </h1>
+            <p>
+              Um lugar onde a estética encontra a funcionalidade. Como
+              desenvolvedor front-end, minha paixão é dar vida às visões dos
+              designers. Cada linha de código é uma oportunidade de criar uma
+              experiência interativa e responsiva que eleva a usabilidade e a
+              acessibilidade. Navegue pelos projetos e descubra como transformo
+              conceitos em interfaces dinâmicas e intuitivas.
+            </p>
 
             <img src={design} alt="" />
           </div>
         </div>
       </div>
-      <h1 className="timeline-title">Jornada Acadêmica</h1>
-      <TimeLine />
     </div>
   );
 }
