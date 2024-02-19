@@ -3,8 +3,9 @@ import TimeLine from "../components/profile/Line";
 
 import { FiCode } from "react-icons/fi";
 import { BsBrush } from "react-icons/bs";
+import { MdDownload } from "react-icons/md";
 
-import ImageAbout from "../assets/image/about-me.png";
+
 import code from "../assets/icon/code.svg";
 import design from "../assets/icon/design.svg";
 
@@ -29,11 +30,9 @@ export default function Profile() {
             intuitivas. Meu site é mais do que linhas de código; é uma mistura
             equilibrada entre funcionalidade e design.
           </p>
-          <button>Entrar em contato</button>
+          <button><MdDownload/>Donwload do CV</button>
         </div>
-        <div className="image-about">
-          <img src={ImageAbout} alt="" />
-        </div>
+        <div className="image-about"></div>
       </div>
 
       <div className="code-design-container">
