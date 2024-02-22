@@ -1,9 +1,11 @@
-import ListProjects from '../components/project/ListProjects';
+import Pagination from '../components/project/Pagination';
+import Gallery from '../components/project/Gallery';
 
 export default function Prokects(){
     return(
         <>
-        <ListProjects />
+        <Pagination />
+        <Gallery/>
         </>
     )
 }
