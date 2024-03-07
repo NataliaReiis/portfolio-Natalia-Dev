@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Pagination() {
   const data = [
@@ -115,7 +116,7 @@ export default function Pagination() {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
   };
 
-  const prevPage = () => { 
+  const prevPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
@@ -136,9 +137,10 @@ export default function Pagination() {
         {currentItems.map((item) => (
           <div key={item.id} className="content-item-projects">
             <h1>{item.name}</h1>
-            <button>{item.linkURL}</button>
+            <Link to={`/project/${item.id}`}>
+              <button>Detalhes</button>
+            </Link>
           </div>
-         
         ))}
       </div>
       <div className="buttons">

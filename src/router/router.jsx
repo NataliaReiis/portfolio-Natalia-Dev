@@ -7,6 +7,7 @@ import Contact from '../pages/Contact';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ProjectDetail from '../components/project/ProjectDetail';
 
 export default function MainRoutes(){
     return(
@@ -16,6 +17,7 @@ export default function MainRoutes(){
             <Route path='/' element={<App/>} />
             <Route path='/profile' element={<Profile/>} />
             <Route path='/projects' element={<Projects/>} />
+            <Route path='/project/:id' element={<ProjectDetail/>} />
             <Route path='/contact' element={<Contact/>} />
         </Routes>
         <Footer/>
