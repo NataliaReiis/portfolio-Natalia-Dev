@@ -4,7 +4,9 @@ export default function Pagination() {
   const data = [
     {
       id: 1,
-      name: "Project One",
+      name: "Site ks Tech",
+      linkgit: "",
+      linkURL: "",
     },
     {
       id: 2,
@@ -133,8 +135,10 @@ export default function Pagination() {
       <div className="container-projects">
         {currentItems.map((item) => (
           <div key={item.id} className="content-item-projects">
-            <h1>{item.id}</h1>
+            <h1>{item.name}</h1>
+            <button>{item.linkURL}</button>
           </div>
+         
         ))}
       </div>
       <div className="buttons">
