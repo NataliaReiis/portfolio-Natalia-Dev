@@ -1,108 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import data from   '../../services/dataProjects'
 
 export default function Pagination() {
-  const data = [
-    {
-      id: 1,
-      name: "Site ks Tech",
-      linkgit: "",
-      linkURL: "",
-    },
-    {
-      id: 2,
-      name: "Project two",
-    },
-    {
-      id: 3,
-      name: "Project three",
-    },
-    {
-      id: 4,
-      name: "Project four",
-    },
-    {
-      id: 5,
-      name: "Project five",
-    },
-    {
-      id: 7,
-      name: "Project five",
-    },
-    {
-      id: 8,
-      name: "Project five",
-    },
-    {
-      id: 9,
-      name: "Project five",
-    },
-    {
-      id: 10,
-      name: "Project five",
-    },
-    {
-      id: 11,
-      name: "Project five",
-    },
-    {
-      id: 12,
-      name: "Project five",
-    },
-    {
-      id: 13,
-      name: "Project five",
-    },
-    {
-      id: 14,
-      name: "Project five",
-    },
-    {
-      id: 15,
-      name: "Project five",
-    },
-    {
-      id: 16,
-      name: "Project five",
-    },
-    {
-      id: 17,
-      name: "Project five",
-    },
-    {
-      id: 18,
-      name: "Project five",
-    },
-    {
-      id: 19,
-      name: "Project five",
-    },
-    {
-      id: 20,
-      name: "Project five",
-    },
-    {
-      id: 21,
-      name: "Project five",
-    },
-    {
-      id: 22,
-      name: "Project five",
-    },
-    {
-      id: 23,
-      name: "Project five",
-    },
-    {
-      id: 24,
-      name: "Project five",
-    },
-    {
-      id: 25,
-      name: "Project five",
-    },
-  ];
-
+  
   const itemsLimitPage = 6;
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -131,6 +32,7 @@ export default function Pagination() {
     }
     return pageNumbers;
   };
+  
   return (
     <>
       <div className="container-projects">
