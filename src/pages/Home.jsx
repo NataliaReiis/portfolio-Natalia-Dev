@@ -11,6 +11,7 @@ import ImageHome from "../assets/image/image-home (2).png";
 import TagsInfos from "../components/home/TagsInfos";
 import Navbar from "../components/Navbar"
 import Projects from "../components/project/Projects"
+import MyServices from "../components/home/MyServices"
 
 import LogoLight from "../assets/image/LogoLight.png"
 
@@ -62,6 +63,7 @@ export default function Home() {
       </div>
       <TagsInfos />
       <Projects />
+      <MyServices />
     </>
   );
 }

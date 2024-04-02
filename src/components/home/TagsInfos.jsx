@@ -17,7 +17,7 @@ export default function TagsInfos() {
         "Projeto experiências digitais que combinam estética e usabilidade, envolvendo os usuários em jornadas intuitivas e memoráveis",
     },
     {
-      image: "src/assets/image/computer.png",
+      image: "src/assets/image/brain.png",
       name: "Cientista da computação",
       description:
         "Cientista da computação em formação e pesquisadora na area de programação para biotecnologia",
