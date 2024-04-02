@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 2rem 0;
+    margin: 8rem 0;
     div {
       display: flex;
       align-items: center;
@@ -41,7 +41,7 @@
         align-items: flex-start
       }
       h1 {
-        @include text-style(1.8rem, 600, var(--text-color), 100%);
+        @include text-style(1.8rem, 600, var(--color1), 100%);
         margin: 1rem;
         text-align: center
       }

@@ -34,17 +34,21 @@ export default function Pagination() {
   };
   
   return (
-    <>
-      <div className="container-projects">
-        {currentItems.map((item) => (
-          <div key={item.id} className="content-item-projects">
-            <h1>{item.name}</h1>
-            <Link to={`/project/${item.id}`}>
-              <button>Detalhes</button>
-            </Link>
-          </div>
-        ))}
-      </div>
+    <>   
+        <div className="title-project">
+          <h1>Meus projetos</h1>
+          <p>Transformando ideias em realidade, um projeto de cada vez.</p>
+        </div>
+        <span className="moreDetails">Clique no projeto e confira os detalhes.</span>
+        <div className="container-projects">
+           {currentItems.map((item) => (
+            <Link to={`/project/${item.id}`} key={item.id}>
+              <div key={item.id} className="content-item-projects">
+                <img src={item.image} alt="" />
+              </div>
+             </Link>
+          ))}
+        </div>
       <div className="buttons">
         <button onClick={prevPage} disabled={currentPage === 1}>
           Anterior

@@ -1,39 +1,29 @@
 const data = [
   {
     id: 1,
-    name: "Site ks Tech",
+    name: "LandingPage NFT",
+    image: "src/assets/image/projects/Nft-mini.png",
   },
   {
     id: 2,
-    name: "LandingPage NFT",
+    name: "Site ks Tech",
+    image: "src/assets/image/projects/ksTech-mini.png",
   },
   {
     id: 3,
-    name: "Buscador de Cep",
+    name: "Site GGB ",
+    image: "src/assets/image/projects/ggb-mini.png",
   },
   {
     id: 4,
-    name: "Pokedex",
+    name: "Sistema Escolar",
+    image: "src/assets/image/projects/sucelso-mini.png",
   },
   {
     id: 5,
-    name: "Api de Video",
-  },
-  {
-    id: 7,
-    name: "CriptoGuardian",
-  },
-  {
-    id: 8,
-    name: "Sistema Escolar",
-  },
-  {
-    id: 9,
-    name: "Portfolio V.1",
-  },
-  {
-    id: 10,
-    name: "Site GGB",
+    name: "Buscador de Cep",
+    image: "src/assets/image/projects/cep-mini.png",
   },
 ];
+
 export default data;

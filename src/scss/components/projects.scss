@@ -1,25 +1,49 @@
+
+.title-project{
+  text-align: center;
+  margin: 15rem 0 0 0;
+  h1{
+    @include text-style(3.5rem, 400, var(--text-dark), auto);
+    margin-bottom: 1rem
+  }
+  p{
+    @include text-style(1.5rem, 200, var(--text-dark), 50%);
+    margin: 0 auto;
+  }
+  
+}
+.moreDetails{
+  position: absolute;
+  left: 7rem;
+  top: 29rem;
+  color: var(--contrast);
+ 
+}
 .container-projects {
   background-color: var(--background);
-  border: 1px solid red;
   width: 100%;
   height: auto;
   display: flex;
-  gap: 4;
   flex-wrap: wrap;
+  gap: 3;
+  padding: 5rem;
+  align-items: center;
   justify-content: center;
-
+  
   .content-item-projects {
-    width: 30vw;
-    height: 40vh;
-    border: 1px solid red;
+    width: auto;
+    height: 100%;
     margin: 1rem;
+
   }
 }
 .buttons{
-    border: 1px solid red;
     display: flex;
     justify-content: end;
     padding: 1rem 3rem;
+    margin-bottom: 3rem;
+    position: absolute;
+    right: 0;
 
     button{
         padding: 0.70rem;

@@ -9,6 +9,10 @@ import { Link } from "react-router-dom";
 
 import ImageHome from "../assets/image/image-home (2).png";
 import TagsInfos from "../components/home/TagsInfos";
+import Navbar from "../components/Navbar"
+import Projects from "../components/project/Projects"
+
+import LogoLight from "../assets/image/LogoLight.png"
 
 export default function Home() {
   const icons = [
@@ -35,6 +39,7 @@ export default function Home() {
   ];
   return (
     <>
+    <Navbar logo={LogoLight} />
       <div className="home-container">
         <div className="infos-home-container">
           <span className="pointes">...</span>
@@ -56,6 +61,7 @@ export default function Home() {
        
       </div>
       <TagsInfos />
+      <Projects />
     </>
   );
 }
