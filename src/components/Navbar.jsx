@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Logo from "../assets/image/WLogo.png";
+import Logo from "../assets/image/LogoLight.png";
 
 export default function Navbar() {
   return (
@@ -23,7 +23,7 @@ export default function Navbar() {
             <li>Contato</li>
           </Link>
         </ul>
-        <button className="button-blog">Blog</button>
+        <button className="button-nav">Entrar em contato</button>
       </header>
     </>
   );

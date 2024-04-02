@@ -1,42 +1,41 @@
 header {
-  background-color: var(--background);
+  background-color: none;
+  position: absolute;
   display: flex;
-  justify-content:center;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
   height: auto;
-  padding: 4rem;
-
-  width: 100vw;
+  padding: 2rem;
+  margin: 2rem;
+  width: 100%;
 
 
   ul {
     display: flex;
-    justify-content: end;
-    padding-left: 20rem;
+    margin-left: 15rem;
     li {
       text-align: center;
       padding: 0 1.8rem;
       text-decoration: none;
       list-style: none;
-    @include text-style(1.2rem, 500, var(--text-color),100%);
+    @include text-style(1.2rem, 300,var(--text-light),100%);
+    border-bottom: 1px solid transparent;
     &:hover{
-      border-bottom: 1px solid var(--primary-color);
-      color: var(--primary-color);
-      scale: 0.9;
+      color: var(--color2);
       transition: 1s ease;
     }
     }
   }
-  .button-blog{
-    @include button-style(10rem, 2.5rem, 1rem, var(--text-light), var(--secondary-color));
+  .button-nav{
+    @include button-style(12rem, 3.5rem, 1rem, var(--text-light), var(--green));
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
+    margin-right: 5rem;
     cursor: pointer;
     &:hover{
-      border: 1px solid var(--primary-color);
-      color: var(--primary-color);
-      background-color: transparent;
+      background-color: var(--color2) ;
+      color: var(--primary);
       transition: 1s ease;
     }
   } 

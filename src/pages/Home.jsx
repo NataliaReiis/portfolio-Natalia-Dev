@@ -7,7 +7,7 @@ import {
 } from "react-icons/si";
 import { Link } from "react-router-dom";
 
-import ImageHome from "../assets/image/image-home.png";
+import ImageHome from "../assets/image/image-home (2).png";
 import TagsInfos from "../components/home/TagsInfos";
 
 export default function Home() {
