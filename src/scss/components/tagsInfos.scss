@@ -5,18 +5,26 @@
     justify-content: center;
     text-align: center;
     margin: 8rem 0;
+
     div {
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       background-color: var(--primary);
-      border: transparent;
-      margin: 1rem;
-      font-size: 1.2rem;
+      border: var(--white);
+      margin: 1.5rem;
       color: var(--text-light);
-      padding: 0.6rem 1rem;
-      border-radius: 5px;
+      padding: 0.8rem 1rem;
+      border-radius: 15px;
+
+      svg{
+        font-size: 2rem;
+        margin-right: 0.7rem;
+      }
+      p{
+        font-size: 1.45rem;
+      }
   
     }
   }
@@ -25,25 +33,28 @@
     width: 95%;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 4rem auto;
     border-radius: 5px;
     border: 1px solid var(--text-color);
     background-color: white;
+   
     span {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 1.4rem;
-      width: 30%;
+      width: 25vw;
+      
       img {
         height: auto;
         width: auto;
         padding: 1rem;
-        align-items: flex-start
+        text-align: center;
       }
       h1 {
-        @include text-style(1.8rem, 600, var(--color1), 100%);
-        margin: 1rem;
+        @include text-style(1.8rem, 600, var(--primary), 100%);
+        margin: 1rem 0;
+      
         text-align: center
       }
       p {

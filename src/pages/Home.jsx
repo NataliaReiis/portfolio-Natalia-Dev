@@ -3,19 +3,22 @@ import {
   SiLinkedin,
   SiInstagram,
   SiBehance,
-  SiBloglovin,
 } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 import ImageHome from "../assets/image/image-home (2).png";
-import TagsInfos from "../components/home/TagsInfos";
+
 import Navbar from "../components/Navbar"
+import TagsInfos from "../components/home/TagsInfos";
 import Projects from "../components/project/Projects"
 import MyServices from "../components/home/MyServices"
+import Recommendation from "../components/home/Recommendations";
+import EndCall from "../components/home/EndCall"
 
 import LogoLight from "../assets/image/LogoLight.png"
 
 export default function Home() {
+
   const icons = [
     {
       icon: <SiGithub />,
@@ -33,15 +36,13 @@ export default function Home() {
       icon: <SiBehance />,
       link: "https://www.behance.net/nataliareiis",
     },
-    {
-      icon: <SiBloglovin />,
-      link: "https://www.google.com/",
-    },
   ];
+  
   return (
     <>
     <Navbar logo={LogoLight} />
-      <div className="home-container">
+      <div 
+      className="home-container">
         <div className="infos-home-container">
           <span className="pointes">...</span>
           <h1>Olá, me chamo Natália </h1>
@@ -64,6 +65,8 @@ export default function Home() {
       <TagsInfos />
       <Projects />
       <MyServices />
+      <Recommendation />
+      <EndCall/>
     </>
   );
 }

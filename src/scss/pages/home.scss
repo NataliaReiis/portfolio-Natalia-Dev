@@ -18,10 +18,10 @@
         font-size: 8rem
       }
       h1 {
-        @include text-style(3rem, 500, var(--text-light), auto);
+        @include text-style(2.75rem, 500, var(--text-light), auto);
       }
       h2 {
-        @include text-style(2rem, 300, var(--text-light), auto);
+        @include text-style(1.9rem, 300, var(--text-light), auto);
       }
       .icons-home {
         margin-top: 2rem;
@@ -29,9 +29,7 @@
           width: auto;
           height: auto;
           margin-right: 1rem;
-          font-size: 1.5em;
-          background-color: var(--color1);
-          border-radius: 25px;
+          font-size: 2em;
           padding: 1rem;
           color: var(--white);
         }

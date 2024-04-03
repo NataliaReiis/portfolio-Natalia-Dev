@@ -27,16 +27,16 @@ export default function TagsInfos() {
     <div className="tagsInfos">
       <span className="tags">
         <div>
-          <FaCode style={{ marginRight: "5px"}} />
+          <FaCode  />
           <p>Desenvolvedora</p>
         </div>
         <div>
-          <MdOutlineDesignServices style={{ marginRight: "5px" }} />
+          <MdOutlineDesignServices  />
           <p>UX Design</p>
         </div>
         <div>
-          <PiStudentBold style={{ marginRight: "5px" }} />
-          <p>Pesquisadora na Área de Biotecnologia</p>
+          <PiStudentBold />
+          <p>Ciência e Tecnologia</p>
         </div>
       </span>
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import data from   '../../services/dataProjects'
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 export default function Pagination() {
   
@@ -51,7 +52,7 @@ export default function Pagination() {
         </div>
       <div className="buttons">
         <button onClick={prevPage} disabled={currentPage === 1}>
-          Anterior
+          <FaArrowLeft/>
         </button>
         {generatePageNumbers().map((pageNumber) => (
           <button key={pageNumber} onClick={() => setPage(pageNumber)}>
@@ -59,7 +60,7 @@ export default function Pagination() {
           </button>
         ))}
         <button onClick={nextPage} disabled={currentPage === totalPages}>
-          Proxima
+          <FaArrowRight />
         </button>
       </div>
     </>
