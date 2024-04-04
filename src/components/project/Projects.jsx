@@ -35,7 +35,7 @@ export default function Pagination() {
   };
   
   return (
-    <>   
+    <div className="projects">   
         <div className="title-project">
           <h1>Meus projetos</h1>
           <p>Transformando ideias em realidade, um projeto de cada vez.</p>
@@ -63,6 +63,6 @@ export default function Pagination() {
           <FaArrowRight />
         </button>
       </div>
-    </>
+    </div>
   );
 }

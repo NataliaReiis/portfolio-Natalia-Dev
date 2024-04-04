@@ -1,17 +1,17 @@
 header {
-  background-color: none;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  height: auto;
-  padding: 2rem;
-  margin: 2rem;
+  background-color: var(--primary);
+  position: fixed;
+  height:auto;
+  padding: 2rem  4rem;
   width: 100%;
+  z-index: 9999;
 
-
-  ul {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    ul {
     display: flex;
     margin-left: 15rem;
     li {
@@ -19,7 +19,7 @@ header {
       padding: 0 1.8rem;
       text-decoration: none;
       list-style: none;
-    @include text-style(1.2rem, 300,var(--text-light),100%);
+    @include text-style(1rem, 200,var(--text-light),100%);
     border-bottom: 1px solid transparent;
     &:hover{
       color: var(--color2);
@@ -28,9 +28,9 @@ header {
     }
   }
   .button-nav{
-    @include button-style(12rem, 3.5rem, 1rem, var(--text-light), var(--green));
+    @include button-style(12rem, 3rem, 1rem, var(--text-light), black);
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-right: 5rem;
     cursor: pointer;
     &:hover{
@@ -38,6 +38,21 @@ header {
       color: var(--primary);
       transition: 1s ease;
     }
-  } 
+  }
+
   
+ }
+ .wave{
+  width: 100%;
+  height: 5vh;
+  position: inherit;
+ 
+  background-image: url('src/assets/image/wave.png');
+  background-position: center;
+  background-repeat:repeat-x;
+  background-size: contain;
+  
+  
+}
+ 
 }

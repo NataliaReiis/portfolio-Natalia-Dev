@@ -6,13 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+html{
     overflow-x: hidden;
-
 }
 body{
     background-color: var(--secondary);
 }
 
-html{
-    scroll-behavior: smooth;
-}

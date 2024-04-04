@@ -2,6 +2,8 @@ import { FaCode } from "react-icons/fa6";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { PiStudentBold } from "react-icons/pi";
 
+import {  motion } from "framer-motion"
+
 export default function TagsInfos() {
   const infos = [
     {
@@ -24,7 +26,10 @@ export default function TagsInfos() {
     },
   ];
   return (
-    <div className="tagsInfos">
+    <motion.div className="tagsInfos"
+     initial={{opacity: 0}}
+     whileInView={{ opacity: 1}}
+    >
       <span className="tags">
         <div>
           <FaCode  />
@@ -49,6 +54,6 @@ export default function TagsInfos() {
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

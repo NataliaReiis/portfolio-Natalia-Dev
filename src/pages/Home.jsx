@@ -1,12 +1,9 @@
-import {
-  SiGithub,
-  SiLinkedin,
-  SiInstagram,
-  SiBehance,
-} from "react-icons/si";
-import { Link } from "react-router-dom";
 
-import ImageHome from "../assets/image/image-home (2).png";
+
+import { useEffect } from "react";
+import {/*  useInView */ } from "react-intersection-observer";
+
+import ScrollReveal from 'scrollreveal';
 
 import Navbar from "../components/Navbar"
 import TagsInfos from "../components/home/TagsInfos";
@@ -14,54 +11,58 @@ import Projects from "../components/project/Projects"
 import MyServices from "../components/home/MyServices"
 import Recommendation from "../components/home/Recommendations";
 import EndCall from "../components/home/EndCall"
+import Banner from "../components/home/Banner"
 
 import LogoLight from "../assets/image/LogoLight.png"
 
 export default function Home() {
 
-  const icons = [
-    {
-      icon: <SiGithub />,
-      link: "https://github.com/NataliaReiis",
-    },
-    {
-      icon: <SiLinkedin />,
-      link: "https://www.linkedin.com/in/nat%C3%A1lia-reis-965763165/",
-    },
-    {
-      icon: <SiInstagram />,
-      link: "https://www.google.com/",
-    },
-    {
-      icon: <SiBehance />,
-      link: "https://www.behance.net/nataliareiis",
-    },
-  ];
-  
+/*   const boxVariant = {
+    visible: {opacity:1, scale:1, x: 0, transition: {
+      duration: 1
+    }},
+    hidden:{opacity:0, scale: 0, x: 200}
+  };
+
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {  
+      if (inView){
+        control.start("visible");
+      }else{
+        control.start("hidden")
+      }
+    }, [control, inView]); */
+    
+    useEffect(() => {
+      const animations = () => {
+        const scrollAni = ScrollReveal({
+          origin: "bottom",
+          distance: "100px",
+          duration: 2000,
+          reset: false,
+        })
+        scrollAni.reveal(`
+        .tagsInfos,.projects,.services,.recommendation,.endCall
+        `,
+        {interval: 500}
+        );
+
+      }
+      animations()
+    }, []);
+
+    window.setTimeout(() => {
+      const home = document.getElementsByClassName("home-container");
+      home[0].computedStyleMap.transform = "none";
+      const nav = document.getElementsByTagName("header");
+      nav[0].style.transform = "none";
+    }, 1500);
   return (
     <>
     <Navbar logo={LogoLight} />
-      <div 
-      className="home-container">
-        <div className="infos-home-container">
-          <span className="pointes">...</span>
-          <h1>Olá, me chamo Natália </h1>
-          <h2>Bem-vinda(o) ao meu universo criativo e tecnológico!</h2>
-          <div className="icons-home">
-            {icons.map((icon, index) => (
-              <span key={index}>
-                <Link to={icon.link} target="_blank">
-                  {icon.icon}
-                </Link>
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className="image-home-container">
-          <img src={ImageHome} alt="" />
-        </div>
-       
-      </div>
+      <Banner />
       <TagsInfos />
       <Projects />
       <MyServices />

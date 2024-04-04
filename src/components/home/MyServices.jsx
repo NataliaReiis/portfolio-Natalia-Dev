@@ -20,7 +20,7 @@ export default function MyServices(){
     ];
 
     return (
-        <> 
+       
         <div className="services">
             <h1  className="title-service">Como posso te ajudar?</h1>
         <div className="myServices"> 
@@ -35,6 +35,6 @@ export default function MyServices(){
         ))}             
         </div>
         </div>
-        </>
+      
     )
 }    
