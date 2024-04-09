@@ -1,0 +1,57 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    margin: 15rem 1rem 0 1rem;
+    padding: 1rem;
+    .image-about{
+     width: 30%;
+     
+    img{
+        zoom: 0.8;
+    }
+    }
+    .description-about{
+     width: 70%;
+
+     h3{
+        text-align: justify;
+        margin: 0 1rem;
+        margin-bottom: 5rem;
+       @include text-style(2.8rem, 500, var(--text-dark), auto);
+     }
+    .content-description-about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        div{
+            width: 20vw;
+            height: 80vh;
+            
+            margin: 0.5rem;
+            text-align: center;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            img{
+                zoom: 1;
+                margin: 1rem 0;
+            }
+            h2{
+                @include text-style(2rem, 500, var(--text-dark), auto);
+                margin: 1rem;
+
+            }
+            p{
+                @include text-style(1.1rem, 400, var(--text-dark), auto);
+                margin: 1rem 0 ;
+            }
+            
+        }
+        
+    }
+  
+    
+    }
+}

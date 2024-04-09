@@ -1,38 +1,37 @@
 /* eslint-disable react/prop-types */
 
-
-
 import {motion} from "framer-motion"
 import { Link } from "react-router-dom";
 
-export default function Navbar(props) {
+import Logo from "../assets/image/LogoLight.png"
+export default function Navbar() {
   return (
     <>
       <motion.header 
         to="/"
-         initial={{opacity: 0, y:120}}
+         /* initial={{opacity: 0, y:120}}
           animate={{opacity:1, y: 0}}
           transition={{
            duration:2,
            ease: 'easeOut'
-          }}
+          }} */
       >
         <nav>
-          <Link>
-          <img src={props.logo} alt="Logo natalia reis" />
+          <Link to="/">
+          <img src={Logo} alt="Logo natalia reis" />
         </Link>
         <ul>
           <Link to="/">
-            <li style={{color:props.color}}>Home</li>
+            <li>Home</li>
           </Link>
           <Link to="/profile">
-            <li style={{color:props.color}}>Perfil e Habilidades</li>
+            <li >Perfil e Habilidades</li>
           </Link>
           <Link to="/projects">
-            <li style={{color:props.color}}>Projetos</li>
+            <li>Projetos</li>
           </Link>
           <Link to="/contact">
-            <li style={{color:props.color}}>Contato</li>
+            <li>Contato</li>
           </Link>
         </ul>
         <button className="button-nav">Entrar em contato</button>

@@ -2,9 +2,10 @@ header {
   background-color: var(--primary);
   position: fixed;
   height:auto;
-  padding: 2rem  4rem;
+  padding: 2rem 4rem;
   width: 100%;
   z-index: 9999;
+  top: 0;
 
   nav{
     display: flex;

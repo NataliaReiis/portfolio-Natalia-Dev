@@ -8,6 +8,7 @@ import { BiSolidGraduation } from "react-icons/bi";
 export default function Line() {
   return (
     <div className="timeline">
+       <h1 className="timeline-tile">Jornada Acadêmica</h1>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

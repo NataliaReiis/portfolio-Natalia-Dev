@@ -13,7 +13,6 @@ import Recommendation from "../components/home/Recommendations";
 import EndCall from "../components/home/EndCall"
 import Banner from "../components/home/Banner"
 
-import LogoLight from "../assets/image/LogoLight.png"
 
 export default function Home() {
 
@@ -61,7 +60,7 @@ export default function Home() {
     }, 1500);
   return (
     <>
-    <Navbar logo={LogoLight} />
+    <Navbar/>
       <Banner />
       <TagsInfos />
       <Projects />
