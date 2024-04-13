@@ -2,23 +2,27 @@
     display: flex;
     justify-content: center;
     align-items:end;
-    margin: 15rem 1rem 0 1rem;
-    padding: 1rem;
+    margin: 15rem 1rem;
+    border-bottom: 1px solid var(--text-dark);  
+    padding: 0;
     .image-about{
-     width: 30%;
-     
+     width: auto;
+     display: flex;
+
     img{
-        zoom: 0.8;
+        zoom: 0.7;
+        height: 100%;
+    
     }
     }
     .description-about{
-     width: 70%;
+     width: auto;
 
      h3{
         text-align: justify;
         margin: 0 1rem;
-        margin-bottom: 5rem;
-       @include text-style(2.8rem, 500, var(--text-dark), auto);
+        margin-bottom: 3rem;
+       @include text-style(2.5rem, 500, var(--text-dark), auto);
      }
     .content-description-about{
         display: flex;
@@ -27,10 +31,8 @@
         margin-left: 2rem;
         div{
             width: 20vw;
-            height: 80vh;
-            
-            margin: 0.5rem;
-            text-align: center;
+            height:auto;
+            margin: 0.8rem;
             justify-content: center;
             align-self: center;
             align-items: center;
@@ -40,11 +42,11 @@
             }
             h2{
                 @include text-style(2rem, 500, var(--text-dark), auto);
-                margin: 1rem;
+                
 
             }
             p{
-                @include text-style(1.1rem, 400, var(--text-dark), auto);
+                @include text-style(1rem, 400, var(--text-dark), auto);
                 margin: 1rem 0 ;
             }
             
