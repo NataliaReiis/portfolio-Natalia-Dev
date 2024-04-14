@@ -1,41 +1,69 @@
-.container_projectsDetail {
-  width: 100%;
-  height: 100%;
-  background: var(--background);
-  padding-top: 2rem ;
-  .container_title-button {
+.container_projectsDetail{
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container_title-button{
     display: flex;
     width: 100%;
-    .button_goBack {
+    .button_goBack{
       justify-content: inherit;
       width: 10%;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
+      button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: none;
+       
+        svg{
+          font-size: 1rem
+        }
+      }
     }
-    .title {
-    @include text-style(1.8rem, 400, var(--secondary-color), auto);
-      text-align: center;
-      width: 85%;
+    .title-project{
+      @include text-style(2rem, 200, var(--secondary-color), auto);
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
     }
   }
-  .content_projects-details {
-    border: 1px solid red;
-    display: flex;
-    margin: 4rem 3rem;
-    .content_media {
-      border: 1px solid red;
-      height: 40vh;
-      width: 50%;
+  .content_projects-details{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    .content_media{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      img{
+        zoom: 1.2;
+      }
     }
-    .content_projects-description {
-      border: 1px solid red;
-      width: 50%;
+    .content_projects-description{
       display: flex;
       flex-direction: column;
-      .content_details-tecnologys {
-        border: 1px solid red;
+      width: 70%;
+      margin: 0 auto;
+      padding: 3rem 0;
+      .goProject{
+        margin-top: 2rem;
+        button{
+          margin-right:1rem ;
+          padding: .5rem;
+        }
+       
+      }
+      .content_details-tecnologys{
+       border: 1px solid var(--text-dark);
+       margin-top: 3rem;
       }
     }
   }
