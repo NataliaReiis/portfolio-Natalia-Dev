@@ -1,16 +1,16 @@
 .projects{
   z-index: 50;
-.title-project{
-  text-align: center;
-  margin: 10rem 0 0 0;
-  h1{
-    @include text-style(3.5rem, 400, var(--text-dark), auto);
-    margin-bottom: 1rem
-  }
-  p{
-    @include text-style(1.5rem, 200, var(--text-dark), 50%);
-    margin: 0 auto;
-  }
+  .title-project{
+    text-align: center;
+    margin: 10rem 0 0 0;
+    h1{
+      @include text-style(3.5rem, 400, var(--text-dark), auto);
+      margin-bottom: 1rem
+    }
+    p{
+      @include text-style(1.5rem, 200, var(--text-dark), 50%);
+      margin: 0 auto;
+    }
   
 }
 .moreDetails{
@@ -64,4 +64,29 @@
         cursor: pointers;
     }
 }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .projects{
+    .title-project{
+      text-align: center;
+      margin: 7rem 0 2rem 0;
+      h1{
+        @include text-style(3rem, 400, var(--text-dark), auto);
+        margin-bottom: 1rem
+      }
+      p{
+        @include text-style(1.2rem, 200, var(--text-dark), 100%);
+        padding: 0;
+      }
+      
+    }
+    .moreDetails{
+      position: absolute;
+      left: 2rem;
+      margin-top: 4rem;
+      color: var(--contrast);
+     
+    }
+  }
 }

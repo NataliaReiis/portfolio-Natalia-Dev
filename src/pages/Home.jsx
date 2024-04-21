@@ -5,7 +5,7 @@ import {/*  useInView */ } from "react-intersection-observer";
 
 import ScrollReveal from 'scrollreveal';
 
-import Navbar from "../components/Navbar"
+
 import TagsInfos from "../components/home/TagsInfos";
 import Projects from "../components/project/Projects"
 import MyServices from "../components/home/MyServices"
@@ -58,15 +58,16 @@ export default function Home() {
       const nav = document.getElementsByTagName("header");
       nav[0].style.transform = "none";
     }, 1500);
+    
   return (
-    <>
-    <Navbar/>
+    <div className="home">
+    
       <Banner />
       <TagsInfos />
       <Projects />
       <MyServices />
       <Recommendation />
       <EndCall/>
-    </>
+    </div>
   );
 }

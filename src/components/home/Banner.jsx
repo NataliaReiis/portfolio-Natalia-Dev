@@ -37,20 +37,17 @@ export default function Banner(){
               initial={{x: '-0%', y: '-15%'}}
               animate={{x: '50%', y: '0%'}}
               transition={{
-                duration: 0.5,
-                delay: 0,
-                ease: 'anticipate',    
-                
-                         
+                duration: 1,
+                animate: "ease",    
+                  
               }}
             >.</motion.div>
             <motion.div
                initial={{x: '-0%', y: '-15%'}}
                animate={{x: '50%', y: '0%'}}
                transition={{
-                 duration: 0.5,
-                 delay: 1,
-                 ease: 'easeIn' ,
+                duration: 1,
+                animate: "ease"
                  
                 
                 }}
@@ -59,33 +56,45 @@ export default function Banner(){
                initial={{x: '-0%', y: '-15%'}}
                animate={{x: '50%', y: '0%'}}
                transition={{
-                 duration:0.5,               
-                 delay: 2,
-                 ease: 'easeIn' ,
+                duration: 1,
+                animate: "ease"
               
                  
                 }}
             >.</motion.div>
           </span>
           <motion.span
-            initial={{opacity: 0, y:120}}
+           initial={{opacity: 0, y: 150}}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+            animate: "ease",
+            duration: "1",
+           }}
+            /* initial={{opacity: 0, y:120}}
             animate={{opacity:1, y: 0}}
             transition={{
               duration:2,
               ease: 'easeOut'
-            }}
+            }} */
           >
             <h1>Olá, me chamo Natália </h1>
             <h2>Bem-vinda(o) ao meu universo criativo e tecnológico!</h2>
           </motion.span>
           <motion.div 
           className="icons-home"
-          initial={{opacity: 0, x: -120}}
+          initial={{opacity: 1, y: 50}}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+            animate: "ease",
+            duration: "1",
+            ease: 'easeOut'
+            }}
+         /*  initial={{opacity: 0, x: -120}}
           animate={{opacity:1, x: 0}}
           transition={{
             duration:2,
             ease:'linear'
-          }}
+          }} */
           >
             {icons.map((icon, index) => (
               <span key={index}>
@@ -97,13 +106,14 @@ export default function Banner(){
           </motion.div>
         </div>
         <motion.div 
-        className="image-home-container"
-         initial={{opacity: 0, y:120}}
-         animate={{opacity:1, y: 0}}
-         transition={{
-           duration:2,
+         className="image-home-container"
+          initial={{opacity: 1, x: 150}}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+           animate: "ease",
+           duration: "1",
            ease: 'easeOut'
-         }}
+          }}
         >
           <img src={ImageHome} alt="" />
         </motion.div>

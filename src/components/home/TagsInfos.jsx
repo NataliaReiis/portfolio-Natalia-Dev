@@ -30,22 +30,38 @@ export default function TagsInfos() {
      initial={{opacity: 0}}
      whileInView={{ opacity: 1}}
     >
-      <span className="tags">
-        <div>
+      <motion.span 
+       className="tags"
+       initial={{opacity: 0, x: 150}}
+       whileInView={{ opacity: 1, x: 0 }}
+       transition={{
+        animate: "ease",
+        duration: "1",
+       }}
+      >
+        <div className="content-tag">
           <FaCode  />
           <p>Desenvolvedora</p>
         </div>
-        <div>
+        <div className="content-tag">
           <MdOutlineDesignServices  />
           <p>UX Design</p>
         </div>
-        <div>
+        <div className="content-tag">
           <PiStudentBold />
           <p>Ciência e Tecnologia</p>
         </div>
-      </span>
+      </motion.span>
 
-      <div className="infos">
+      <motion.div
+       className="infos"
+       initial={{opacity: 0, y: 150}}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{
+        animate: "ease",
+        duration: "1",
+       }}
+       >
         {infos.map((info, index) => (
           <span key={index}>
             <img src={info.image} alt="" />
@@ -53,7 +69,7 @@ export default function TagsInfos() {
             <p>{info.description}</p>
           </span>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

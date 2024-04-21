@@ -48,3 +48,40 @@
     
   }
 }
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .services{
+        margin-top: 10rem;
+        padding: 0;
+        .title-service{
+            text-align: center;
+            padding: 2.5rem;
+            @include text-style(2rem, 400, var(--text-light), auto)
+        }
+        .myServices{
+            flex-wrap: wrap;
+            width: auto;
+            justify-content: center;
+        .container-service{
+            padding: 0.8rem;
+            margin: 1rem;
+                
+        .content-service{
+            height: auto;
+            padding: 1rem 0;
+    
+            h1{
+                @include text-style(1.5rem, 400, var(--text-light), 100%);
+                padding: 0.8rem
+            }    
+        }
+        p{
+                @include text-style(1.2rem, 200, var(--text-light), auto);
+                padding: 0.4rem;
+    
+            }
+        }
+        
+      }
+    }
+}

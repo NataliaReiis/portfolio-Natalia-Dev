@@ -4,25 +4,26 @@
     height: auto;
     width: auto;
     background-color: var(--primary);
-    padding-top: 10rem ;
-
+    padding-top: 2rem ;
     .infos-home-container {
       display: flex;
       justify-content: center;
       flex-direction: column;
       margin:0 3rem;
+      padding: 0 3rem;
       height: 100%;
       width: 50%;
       overflow-y: hidden;
-      
+   
       .pointes{
         color: var(--color1);
-        font-size: 8rem;
         display: flex;
-        height: auto;
-        width: auto;
+        height: 100%;
         width: 100%;
+        div{
+          font-size: 8rem;
 
+        }
       }
       h1 {
         @include text-style(2.75rem, 500, var(--text-light), auto);
@@ -46,10 +47,52 @@
   .image-home-container {  
       display: flex;
       height: 100%;
+      width: auto;
       justify-content: end;
-      width: 50%;
-      padding-top: 2rem;
-      scale: 1;
+    
+      img{
+        scale: 1;
+      }
+    }  
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .home-container {
+    display: block;
+    padding-top: 0 ;
+    .infos-home-container {
+      margin:0;
+      padding: 0 2rem;
+      height: 100%;
+      width: 100%;
+      .pointes{
+        div{
+          font-size: 8rem;
+        }
+      }
+      h1 {
+        @include text-style(2.3rem, 500, var(--text-light), auto);
+        padding-bottom: 1rem;
+      }
+      h2 {
+        @include text-style(1.5rem, 300, var(--text-light), auto);
+      }
+      .icons-home {
+        margin-top: 1.5rem;
+        
+        svg {     
+          font-size: 1.8em;
+        }
+      }
+    }
+  .image-home-container {  
+      display: flex;
+      justify-content: end;
+     
+      img{
+        max-width: 60%;
+         scale: 1;
+      }
       
     }  
+}
 }

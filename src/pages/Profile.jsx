@@ -1,6 +1,5 @@
 
 import TimeLine from "../components/profile/TimeLine";
-import Navbar from "../components/Navbar"
 import About from  "../components/profile/About"
 
 import html from "../assets/image/html.png";
@@ -36,7 +35,7 @@ export default function Profile() {
 
   return (
   <> 
-   <Navbar />
+   
    <About />
    <TimeLine />
 

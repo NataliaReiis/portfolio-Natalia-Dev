@@ -64,3 +64,49 @@
     }
   }
 }
+@media screen and (min-width: 280px) and (max-width:1080px) {
+  .tagsInfos {
+    width: 100vw;
+    height: auto;
+    text-align: none;
+    .tags {
+      margin: 7rem 0;
+      display: flex;
+      gap: 1;
+      flex-wrap: wrap;
+      .content-tag {
+        display: flex;
+        width: auto;
+        height: auto;
+        text-align: justify;
+        margin: 0.5rem;
+        padding:0.5rem;
+      
+        svg{
+          font-size: 1.8rem;
+          margin-right: 0.7rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+    
+      }
+    }
+    .infos {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: 2rem auto;
+
+      span {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        width: auto;
+         
+      }
+    }
+  }
+}
