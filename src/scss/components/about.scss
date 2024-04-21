@@ -1,122 +1,105 @@
-.about{
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 15rem 1rem;
+  border-bottom: 1px solid var(--text-dark);
+  padding: 0;
+  .image-about {
+    width: auto;
     display: flex;
-    justify-content: center;
-    align-items:end;
-    margin: 15rem 1rem;
-    border-bottom: 1px solid var(--text-dark);  
-    padding: 0;
-    .image-about{
-     width: auto;
-     display: flex;
 
-    img{
-        zoom: 0.7;
-        height: 100%;
-    
+    img {
+      zoom: 0.7;
+      height: 100%;
     }
-    }
-    .description-about{
-     width: auto;
+  }
+  .description-about {
+    width: auto;
 
-     h3{
-        text-align: justify;
-        margin: 0 1rem;
-        margin-bottom: 3rem;
-       @include text-style(2.5rem, 500, var(--text-dark), auto);
-     }
-    .content-description-about{
-        display: flex;
+    h3 {
+      text-align: justify;
+      margin: 0 1rem;
+      margin-bottom: 3rem;
+      @include text-style(2.5rem, 500, var(--text-dark), auto);
+    }
+    .content-description-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2rem;
+      div {
+        width: 20vw;
+        height: auto;
+        margin: 0.8rem;
         justify-content: center;
+        align-self: center;
         align-items: center;
-        margin-left: 2rem;
-        div{
-            width: 20vw;
-            height:auto;
-            margin: 0.8rem;
-            justify-content: center;
-            align-self: center;
-            align-items: center;
-            img{
-                zoom: 1;
-                margin: 1rem 0;
-            }
-            h2{
-                @include text-style(2rem, 500, var(--text-dark), auto);
-                
-
-            }
-            p{
-                @include text-style(1rem, 400, var(--text-dark), auto);
-                margin: 1rem 0 ;
-            }
-            
+        img {
+          zoom: 1;
+          margin: 1rem 0;
         }
-        
+        h2 {
+          @include text-style(2rem, 500, var(--text-dark), auto);
+        }
+        p {
+          @include text-style(1rem, 400, var(--text-dark), auto);
+          margin: 1rem 0;
+        }
+      }
     }
-  
-    
-    }
+  }
 }
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
-    .about{
-        display: flex;
-        justify-content: center;
-        align-items:end;
-        margin: 15rem 1rem;
-        border-bottom: 1px solid var(--text-dark);  
-        padding: 0;
-        .image-about{
-         width: auto;
-         display: flex;
-    
-        img{
-            zoom: 0.7;
-            height: 100%;
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem 20rem 1rem;
+    padding: 0;
+    border: none;
+
+    .image-about {
+      position: absolute;
+      margin: 0 auto;
+      transform: translateY(-20rem);        
+      margin: 4 auto;
+      img {
+        zoom: 0.5;
         
-        }
-        }
-        .description-about{
-         width: auto;
-    
-         h3{
-            text-align: justify;
-            margin: 0 1rem;
-            margin-bottom: 3rem;
-           @include text-style(2.5rem, 500, var(--text-dark), auto);
-         }
-        .content-description-about{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 2rem;
-            div{
-                width: 20vw;
-                height:auto;
-                margin: 0.8rem;
-                justify-content: center;
-                align-self: center;
-                align-items: center;
-                img{
-                    zoom: 1;
-                    margin: 1rem 0;
-                }
-                h2{
-                    @include text-style(2rem, 500, var(--text-dark), auto);
-                    
-    
-                }
-                p{
-                    @include text-style(1rem, 400, var(--text-dark), auto);
-                    margin: 1rem 0 ;
-                }
-                
-            }
-            
-        }
-      
-        
-        }
+      }
     }
-    
+    .description-about {
+      width: 95%;
+      position: relative;
+      margin: 0 auto;
+
+      h3 {
+        text-align: left;
+        padding: 1.5rem 0;
+        @include text-style(1.5rem, 500, var(--text-dark), auto);
+      }
+      .content-description-about {
+        flex-direction: column;
+        width: auto;
+        margin-left: 0;
+        margin: 4rem 0;
+
+        div {
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          transform: translateY(100%);        
+
+          img {
+            zoom: 1;
+            min-width: auto;
+            margin: 1rem 0;
+          }
+
+       
+        }
+      }
+    }
+  }
 }

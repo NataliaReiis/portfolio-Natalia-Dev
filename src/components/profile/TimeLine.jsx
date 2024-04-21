@@ -9,12 +9,13 @@ export default function Line() {
   return (
     <div className="timeline">
        <h1 className="timeline-tile">Jornada Acadêmica</h1>
+       <h2>Principais certificações</h2>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#fff", color: "#005078" }}
           contentArrowStyle={{ borderRight: "10px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
+          date="2024 - present"
           iconStyle={{
             background: "rgb(33, 150, 243)",
             color: "#fff",
@@ -23,35 +24,34 @@ export default function Line() {
           icon={<BiSolidGraduation />}
         >
           <h3 className="vertical-timeline-element-title">
-            Universidade Jorge Amado
+            Universidade Federal da Bahia
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">2022-2025</h4>
-          <p>Bacharelado em Ciência da computação</p>
+          <h4 className="vertical-timeline-element-subtitle">2024-2026</h4>
+          <p>Bacharelado Interdisciplinar em ciência, tecnologia e Inovação</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#005058", color: "#fff" }}
-          date="2010 - 2011"
+          date="2022 - present"
           iconStyle={{
             background: "rgb(33, 150, 243)",
             color: "#fff",
             marginTop: "10px",
           }}
-          /*  icon={<WorkIcon />} */
+           icon={<BiSolidGraduation />}
         >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
+          <h3 className="vertical-timeline-element-title">Universidade Jorge Amado</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            2022- 2025
           </h4>
           <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            Bacharelado em ciência da computação
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#005058", color: "#fff" }}
-          date="2008 - 2010"
+          date="2023 - 2024"
           iconStyle={{
             background: "rgb(33, 150, 243)",
             color: "#fff",
@@ -59,16 +59,16 @@ export default function Line() {
           }}
           /*  icon={<WorkIcon />} */
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
+          <h3 className="vertical-timeline-element-title">Front-end e ERP/RPA</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
+           Estágio
           </h4>
-          <p>User Experience, Visual Design</p>
+          <p> Ks Solutions - Consultoria em teconoliga</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#fff", color: "#005078" }}
-          date="2006 - 2008"
+          date="2023"
           iconStyle={{
             background: "rgb(33, 150, 243)",
             color: "#fff",
@@ -76,16 +76,16 @@ export default function Line() {
           }}
           /* icon={<WorkIcon />} */
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
+          <h3 className="vertical-timeline-element-title">Monitora de teconoliga</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+           Unijorge
           </h4>
-          <p>User Experience, Visual Design</p>
+          <p>Monitora de logíca de programação e desenvolvimento web</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           contentStyle={{ background: "#fff", color: "#005078" }}
-          date="April 2013"
+          date="2023"
           iconStyle={{
             background: "rgb(233, 30, 99)",
             color: "#fff",
@@ -94,15 +94,15 @@ export default function Line() {
           /*  icon={<SchoolIcon />} */
         >
           <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
+           Palestras / Oficinas de React
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
+          <h4 className="vertical-timeline-element-subtitle">2022</h4>
+          <p>Palestras e oficinas de react e desenvolvimento web</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           contentStyle={{ background: "#005058", color: "#fff" }}
-          date="November 2012"
+          date="outubro 2022"
           iconStyle={{
             background: "rgb(233, 30, 99)",
             color: "#fff",
@@ -111,10 +111,10 @@ export default function Line() {
           /* icon={<SchoolIcon />} */
         >
           <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
+          Galact Problem-solver
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
+          <h4 className="vertical-timeline-element-subtitle">Certificação</h4>
+          <p>NASA - National Aeronautics and Space Administration</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -128,10 +128,10 @@ export default function Line() {
           /* icon={<SchoolIcon />} */
         >
           <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
+          Scrum Fundamentals
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
+          Certificação
           </h4>
           <p>Creative Direction, Visual Design</p>
         </VerticalTimelineElement>

@@ -4,4 +4,22 @@
         text-align: center;
         padding-bottom: 6rem;
     }
+    h2{
+        @include text-style(3.7rem, 500, var(--text-dark), auto);
+
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width:1080px) {
+    .timeline{
+        margin: 1rem 1.5rem;
+        .timeline-tile{
+            @include text-style(2.5rem, 500, var(--text-dark), auto);
+            padding: 1rem 0;
+        }
+        h2{
+            @include text-style(1rem, 400, var(--text-dark), auto);
+            margin: 1rem;
+        }
+    }
 }
