@@ -4,7 +4,7 @@ import About from "../components/profile/About";
 import html from "../assets/image/html.png";
 import css from "../assets/image/css.png";
 import js from "../assets/image/js.png";
-import sass from "../assets/image/SASS.png";
+import scss from "../assets/image/SASS.png";
 import react from "../assets/image/react.png";
 import node from "../assets/image/node.png";
 import sql from "../assets/image/sql.png";
@@ -56,7 +56,7 @@ export default function Profile() {
         <img src={html} alt="" />
         <img src={css} alt="" />
         <img src={js} alt="" />
-        <img src={sass} alt="" />
+        <img src={scss} alt="" />
         <img src={react} alt="" />
         <img src={node} alt="" />
         <img src={sql} alt="" />
