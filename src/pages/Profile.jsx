@@ -4,7 +4,7 @@ import About from "../components/profile/About";
 import html from "../assets/image/html.png";
 import css from "../assets/image/css.png";
 import js from "../assets/image/js.png";
-import scss from "../assets/image/SASS.png";
+import scss from "../assets/image/scss.png";
 import react from "../assets/image/react.png";
 import node from "../assets/image/node.png";
 import sql from "../assets/image/sql.png";
