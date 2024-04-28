@@ -4,22 +4,28 @@ import { PiStudentBold } from "react-icons/pi";
 
 import {  motion } from "framer-motion"
 
+import frontEnd from "../../assets/image/front-end.png"
+import UxDesign from "../../assets/image/design.png"
+import cientist from "../../assets/image/brain.png"
+
+
+
 export default function TagsInfos() {
   const infos = [
     {
-      image: "src/assets/image/front-end.png",
+      image: frontEnd,
       name: "Dev Front-end",
       description:
         "Criação de interfaces cativantes e funcionais que elevam a experiência do usuário a novos níveis.",
     },
     {
-      image: "src/assets/image/design.png",
+      image: UxDesign,
       name: "Ui / Ux Design",
       description:
         "Projeto experiências digitais que combinam estética e usabilidade, envolvendo os usuários em jornadas intuitivas e memoráveis",
     },
     {
-      image: "src/assets/image/brain.png",
+      image: cientist,
       name: "Cientista da computação",
       description:
         "Cientista da computação em formação e pesquisadora na area de programação para biotecnologia",
