@@ -6,12 +6,6 @@ import css from "../assets/image/css.png";
 import js from "../assets/image/js.png";
 import scss from "../assets/image/scss.png";
 import react from "../assets/image/react.png";
-import nodejs from "../assets/image/node.png";
-import sql from "../assets/image/sql.png";
-import application_programming_interface from "../assets/image/api.png";
-import adobe_photoshop from "../assets/image/photoshop.png";
-import fig from "../assets/image/figma.png";
-import wp from "../assets/image/wordpress.png";
 
 export default function Profile() {
   const otherServices = [
