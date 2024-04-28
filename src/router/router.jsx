@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProjectDetail from '../components/project/ProjectDetail';
 import { useEffect } from 'react';
+import ScrollToTopOnRouteChange from '../components/ScrollToTop'; // Importe o componente
 
 export default function MainRoutes(){
     useEffect(()=> {
@@ -17,6 +18,7 @@ export default function MainRoutes(){
     return(
         <>
         <Navbar />
+        <ScrollToTopOnRouteChange />
         <Routes>
             <Route path='/' element={<App/>} />
             <Route path='/profile' element={<Profile/>} />
