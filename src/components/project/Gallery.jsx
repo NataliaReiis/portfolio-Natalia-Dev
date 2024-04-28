@@ -2,14 +2,21 @@ import React from "react";
 import ImageGallery from "react-image-gallery";
 import 'react-image-gallery/styles/scss/image-gallery.scss';
 
+import card1 from "src/assets/image/cards/card-açai4.png"
+import card1Mini from "src/assets/image/cards/card-açai4-min.png"
+
+import card2 from "src/assets/image/cards/card-açai3.png"
+import card2Mini from "src/assets/image/cards/card-açai3-min.png"
+
+
 const images = [
     {
-      original: "src/assets/image/cards/card-açai4.png",
-      thumbnail: "src/assets/image/cards/card-açai4-min.png",
+      original: card1,
+      thumbnail: card1Mini,
     },
     {
-      original: "src/assets/image/cards/card-açai3.png",
-      thumbnail: "src/assets/image/cards/card-açai3-min.png",
+      original: card2,
+      thumbnail: card2Mini,
     },
     {
       original: "src/assets/image/cards/card-açai1.png",
