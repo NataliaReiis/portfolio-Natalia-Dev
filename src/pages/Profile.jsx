@@ -1,12 +1,6 @@
 import TimeLine from "../components/profile/TimeLine";
 import About from "../components/profile/About";
 
-import html from "../assets/image/html.png";
-import css from "../assets/image/css.png";
-import js from "../assets/image/js.png";
-import scss from "../assets/image/scss.png";
-import react from "../assets/image/react.png";
-
 export default function Profile() {
   const otherServices = [
     {
@@ -46,11 +40,11 @@ export default function Profile() {
         ))}
       </div>
       <div className="images-languages">
-        <img src={html} alt="" />
-        <img src={css} alt="" />
-        <img src={js} alt="" />
-        <img src={scss} alt="" />
-        <img src={react} alt="" />
+        <img src="https://i.ibb.co/54FvBTw/html.webp" alt="" />
+        <img src="https://i.ibb.co/JcZ9sYG/css.webp" alt="" />
+        <img src="https://i.ibb.co/0BZ5JKH/js.webp" alt="" />
+        <img src="https://i.ibb.co/fHS75Qj/scss.webp" alt="" />
+        <img src="https://i.ibb.co/28Nj3nz/react.png" alt="" />
         <img src="https://i.ibb.co/LYWJ3s1/node.webp" alt="" />
         <img src="https://i.ibb.co/y4CztYW/sql.webp" alt="" />
         <img src="https://i.ibb.co/5F6gmmQ/api.webp" alt="" />
