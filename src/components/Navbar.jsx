@@ -72,9 +72,12 @@ export default function Navbar() {
             <li>Projetos </li>
           </Link>
         </ul>
-        <button className="button-nav" onClick={closeNav}>
-          <FaWhatsapp /> Entrar em contato
-        </button>
+        <Link to="https://w.app/2cXTvj" target="blank">
+          <button className="button-nav" onClick={closeNav}>
+            <FaWhatsapp /> Entrar em contato
+          </button>
+        </Link>
+        
       </motion.div>
     </nav>
   );

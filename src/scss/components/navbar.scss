@@ -40,8 +40,9 @@ nav {
     .button-nav {
       border: none;
       border-radius: 20px;
-      @include button-style(20rem, auto,1rem, var(--text-light), var(--green));
+      @include button-style(14rem, auto,1rem, var(--text-light), var(--green));
       height: 8vh;
+      cursor: pointer;
       svg{
         align-items: center;
         margin-right: 0.5rem;
