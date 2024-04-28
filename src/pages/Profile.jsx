@@ -57,12 +57,12 @@ export default function Profile() {
         <img src={js} alt="" />
         <img src={scss} alt="" />
         <img src={react} alt="" />
-        <img src={nodejs} alt="" />
-        <img src={sql} alt="" />
-        <img src={application_programming_interface} alt="" />
-        <img src={adobe_photoshop} alt="" />
-        <img src={fig} alt="" />
-        <img src={wp} alt="" />
+        <img src="https://i.ibb.co/LYWJ3s1/node.webp" alt="" />
+        <img src="https://i.ibb.co/y4CztYW/sql.webp" alt="" />
+        <img src="https://i.ibb.co/5F6gmmQ/api.webp" alt="" />
+        <img src="https://i.ibb.co/ZH1Gy7g/photoshop.png" alt="" />
+        <img src="https://i.ibb.co/6mW7YZ7/figma.png" alt="" />
+        <img src="https://i.ibb.co/HhKG57x/wordpress.png" alt="" />
       </div>
     </>
   );
