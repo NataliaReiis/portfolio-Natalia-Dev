@@ -3,7 +3,7 @@ import About from "../components/profile/About";
 
 import html from "../assets/image/html.png";
 import css from "../assets/image/css.png";
-import javascript from "../assets/image/js.png";
+import js from "../assets/image/js.png";
 import sass from "../assets/image/sass.png";
 import react from "../assets/image/react.png";
 import node from "../assets/image/node.png";
@@ -12,6 +12,7 @@ import api from "../assets/image/api.png";
 import photoshop from "../assets/image/photoshop.png";
 import figma from "../assets/image/figma.png";
 import wordpress from "../assets/image/wordpress.png";
+
 
 export default function Profile() {
   const otherServices = [
@@ -54,7 +55,7 @@ export default function Profile() {
       <div className="images-languages">
         <img src={html} alt="" />
         <img src={css} alt="" />
-        <img src={javascript} alt="" />
+        <img src={js} alt="" />
         <img src={sass} alt="" />
         <img src={react} alt="" />
         <img src={node} alt="" />
