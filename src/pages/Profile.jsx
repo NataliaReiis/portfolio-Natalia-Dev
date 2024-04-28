@@ -6,13 +6,12 @@ import css from "../assets/image/css.png";
 import js from "../assets/image/js.png";
 import scss from "../assets/image/scss.png";
 import react from "../assets/image/react.png";
-import node from "../assets/image/node.png";
-import sql from "../assets/image/sql.png";
-import api from "../assets/image/api.png";
-import photoshop from "../assets/image/photoshop.png";
-import figma from "../assets/image/figma.png";
-import wordpress from "../assets/image/wordpress.png";
-
+import nodejs from "../assets/image/node.png";
+import sequel from "../assets/image/sql.png";
+import application_programming_interface from "../assets/image/api.png";
+import adobe_photoshop from "../assets/image/photoshop.png";
+import fig from "../assets/image/figma.png";
+import wp from "../assets/image/wordpress.png";
 
 export default function Profile() {
   const otherServices = [
@@ -58,12 +57,12 @@ export default function Profile() {
         <img src={js} alt="" />
         <img src={scss} alt="" />
         <img src={react} alt="" />
-        <img src={node} alt="" />
-        <img src={sql} alt="" />
-        <img src={api} alt="" />
-        <img src={photoshop} alt="" />
-        <img src={figma} alt="" />
-        <img src={wordpress} alt="" />
+        <img src={nodejs} alt="" />
+        <img src={sequel} alt="" />
+        <img src={application_programming_interface} alt="" />
+        <img src={adobe_photoshop} alt="" />
+        <img src={fig} alt="" />
+        <img src={wp} alt="" />
       </div>
     </>
   );
