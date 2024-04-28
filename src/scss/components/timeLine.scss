@@ -5,7 +5,8 @@
         padding-bottom: 6rem;
     }
     h2{
-        @include text-style(3.7rem, 500, var(--text-dark), auto);
+        @include text-style(1rem, 200, var(--text-dark), auto);
+        padding-left: 6em;
 
     }
 }
@@ -19,7 +20,7 @@
         }
         h2{
             @include text-style(1rem, 400, var(--text-dark), auto);
-            margin: 1rem;
+           
         }
     }
 }

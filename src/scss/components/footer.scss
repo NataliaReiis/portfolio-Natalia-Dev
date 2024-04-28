@@ -1,73 +1,80 @@
 footer {
-  background-color: var(--gray);
-  padding: 1rem 0;
-  .footer {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .footer_contact {
-      height: auto;
-      width: auto;
-      display: flex;
-      flex-direction: column;
+  background-color: var(--primary);
+  height:auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(193, 193, 193);
+  padding: 1.5rem;
+  .logo {
+    width: 20%;
+    img{
+      padding-bottom: 1rem;
+    }
+    p {
+      @include text-style(0.8em, 400, rgb(193, 193, 193), auto);
+    }
+  }
+  .menu-footer {
+    h1{
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    p {
+      text-decoration: none;
+      color: rgb(193, 193, 193);
+      padding-bottom: 1rem;
+    }
+  }
+  .more-footer {
+    h1{
+      font-weight: 500;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .contact-footer {
+      margin: 1rem 0;
       span {
         display: flex;
         align-items: center;
-        padding-bottom: 1rem;
+        justify-content: justify;
+        margin: 1rem 0;
         svg {
-          margin-right: 1rem;
-          color: var(--text-light);
-        }
-        p {
-          color: var(--text-light);
+          margin-right: 0.5rem;
+          font-size: 1.2rem;
         }
       }
     }
-    .footer_icons-social {
-      width: auto;
-      height: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 1rem 0;
-      svg {
-        margin-right: 3rem;
-        font-size: 2rem;
-        color: var(--text-light);
-        cursor: pointer;
-
-        &:hover {
-          color: var(--primary-color);
-          scale: 1.2;
-          transition: ease 1s;
-        }
-      }
-    }
-    .footer_navbar {
-      width: auto;
-      height: auto;
-      ul {
-        overflow-y: hidden;
-        li {
-          padding: 0.6rem 3rem;
-          color: var(--text-light);
-          margin-top: 1rem;
-          &:hover {
-            color: var(--primary-color);
-            scale: 1.1;
-            transition: ease 1s;
-          }
-        }
+    .others-contact-footer{
+      margin-top: 1rem;
+      svg{
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        color:rgb(193, 193, 193) ;
       }
     }
   }
-  .copy {
-    text-align: center;
-    color: var(--text-light);
-    filter: opacity(0.5);
-    font-size: 0.8rem;
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  footer{
+    display: block;
+    .logo{
+      width: 100%;
+      p{
+        width: 100%;
+      }
+    }
+    .menu-footer{
+      margin: 1.5rem 0;
+    }
+    .others-contact-footer{
+      margin-top: 1rem;
+      svg{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color:rgb(193, 193, 193) ;
+      }
+    }
   }
 }

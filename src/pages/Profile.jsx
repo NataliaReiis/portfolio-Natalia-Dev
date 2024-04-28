@@ -4,15 +4,15 @@ import About from  "../components/profile/About"
 
 import html from "../assets/image/html.png";
 import css from "../assets/image/css.png";
-import javascript from "../assets/image/Javascript.png";
-import sass from "../assets/image/Sass.png";
+import javascript from "../assets/image/javascript.png";
+import sass from "../assets/image/sass.png";
 import react from "../assets/image/react.png";
-import node from "../assets/image/Node.png"
-import sql from "../assets/image/SQL.png"
-import api from "../assets/image/API.png";
-import photoshop from "../assets/image/Photoshop.png";
-import figma from "../assets/image/Figma.png";
-import wordpress from "../assets/image/WordPress.png";
+import node from "../assets/image/node.png"
+import sql from "../assets/image/sql.png"
+import api from "../assets/image/api.png";
+import photoshop from "../assets/image/photoshop.png";
+import figma from "../assets/image/figma.png";
+import wordpress from "../assets/image/wordpress.png";
 
 
 export default function Profile() {

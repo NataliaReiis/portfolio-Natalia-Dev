@@ -28,11 +28,16 @@
 }
 .images-languages {
   display: flex;
-
+  flex-wrap: wrap;
+  gap: 4;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
   img {
-    zoom: 0.6;
-    margin: 7rem 1rem;
-    padding: 1.8rem;
+    margin: 2rem 2.5rem;
+    width: 5rem;
+   
+    
   }
 }
 
@@ -56,11 +61,7 @@
     }
   }
   .images-languages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4;
     img {
-      zoom: 0.45;
       padding: 1rem;
       margin: 1rem auto;
       

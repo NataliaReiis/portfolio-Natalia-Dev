@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
   const [navState, setNavState] = useState(false);
@@ -56,7 +57,7 @@ export default function Navbar() {
               <li>Contato</li>
             </Link> */}
           </ul>
-          <button className="button-nav">Entrar em contato</button>
+          <button className="button-nav"><FaWhatsapp/>Entrar em contato</button>
         </div>
 
        {/*  <motion.div

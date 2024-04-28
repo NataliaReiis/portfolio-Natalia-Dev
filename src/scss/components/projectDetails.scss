@@ -14,13 +14,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
       button{
         display: flex;
         align-items: center;
         justify-content: center;
         border: none;
         background: none;
-       
+       cursor: pointer;
         svg{
           font-size: 1rem
         }
@@ -58,12 +59,18 @@
         button{
           margin-right:1rem ;
           padding: .5rem;
+          border-radius: 10px;
+          border: 1px solid;
+          cursor: pointer;
         }
        
       }
       .content_details-tecnologys{
        border: 1px solid var(--text-dark);
+       border-radius: 20px;
+       padding-left: 1rem;
        margin-top: 3rem;
+       width: 100%;
       }
     }
   }

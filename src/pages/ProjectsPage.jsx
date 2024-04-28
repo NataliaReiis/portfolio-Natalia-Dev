@@ -7,7 +7,6 @@ import LogoDark from '../assets/image/LogoDark.png'
 export default function Prokects(){
     return(
         <>
-        <Navbar logo={LogoDark} color='var(--text-dark)'/>
         <Pagination />
         <Gallery/>
         </>
